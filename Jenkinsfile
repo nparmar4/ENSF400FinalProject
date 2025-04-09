@@ -18,6 +18,10 @@ pipeline {
       steps {
         sh './gradlew clean assemble'
       }
+      tools {
+        jdk 'Java-8'
+      }
+
     }
 
     // run all the unit tests - these do not require anything else
